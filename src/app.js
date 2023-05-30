@@ -4,11 +4,14 @@ import cors from "cors";
 import db from "./database/db.js";
 //rutas
 import blogRoutes from './routes/routes.js'
+import router from './routes/routes.js'
+
 const app=express()
 
 app.use(cors())
 app.use(express.json())
 app.use('/blogs',blogRoutes)
+app.use('/blogs',router)
 
 try {
   await db.authenticate 
@@ -18,5 +21,5 @@ try {
 }
 
 
-app.get("/", (req, res) => res.send("Hello World!"));
+app.get("/", (req, res) => res.send("chupala!"));
 export default app 
