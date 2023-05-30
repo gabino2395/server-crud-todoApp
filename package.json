@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
   },
   "repository": {
-    "type": "git",
+    "type": "git", 
     "url": "git+https://github.com/gabino2395/server-crud-todoApp.git"
   },
   "keywords": [],
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/gabino2395/server-crud-todoApp#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.1.0",
     "express": "^4.18.2",
     "pg": "^8.11.0",
     "pg-hstore": "^2.3.4",

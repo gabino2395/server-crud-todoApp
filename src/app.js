@@ -11,7 +11,7 @@ app.use(express.json())
 app.use('/blogs',blogRoutes)
 
 try {
-  await db.authenticate
+  await db.authenticate 
   console.log('Conexion a la db')
 } catch (error) {
   console.log(`El error ocurrio aca: ${error}`)
